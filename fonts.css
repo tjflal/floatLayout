@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/* @import 다른 스타일 시트를 가져올때 사용
+@import url('경로') */
+
+
+
+/* 웹폰트 설정 사용자의 컴퓨터에 설치되지 않은 글꼴을 서버에 올려 놓은 후 해당 사이트에 접속하는 사용자의 컴퓨터에 그 폰트가 다운로드 되어 보여지게 함*/
+@font-face {
+    font-family: 'SpoqaHanSansNeo';
+    src: local('SpoqaHanSansNeo'),
+        url(./font/SpoqaHanSansNeo-Regular.woff2) format('woff2'),
+        url(./font/SpoqaHanSansNeo-Regular.woff) format('woff');
+    font-style: normal;
+    font-weight: 400;
+
+    /* 로딩 상태에 따른 동작 설정 
+    block; FOIT방식. 웹폰트가 로딩되지 않으면 텍스트를 렌더링 하지 않음. 로딩완료후 적용
+    swap; FOIT방식.로딩되는 동안 기본 서체로 보이고 완료되면 웹폰트 적용. 웹폰트 로딩 여부와 관계없이 항상 텍스트보임*/
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SpoqaHanSansNeo';
+    src: local('SpoqaHanSansNeo'),
+        url(./font/SpoqaHanSansNeo-Light.woff2) format('woff2'),
+        url(./font/SpoqaHanSansNeo-Light.woff) format('woff');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 300;
+    
+}
+@font-face {
+    font-family: 'SpoqaHanSansNeo';
+    src: local('SpoqaHanSansNeo'),
+        url(./font/SpoqaHanSansNeo-Bold.woff2) format('woff2'),
+        url(./font/SpoqaHanSansNeo-Bold.woff) format('woff');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    
+}
+@font-face {
+    font-family: 'SpoqaHanSansNeo';
+    src: local('SpoqaHanSansNeo'),
+        url(./font/SpoqaHanSansNeo-Medium.woff2) format('woff2'),
+        url(./font/SpoqaHanSansNeo-Medium.woff) format('woff');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    
+}
+
